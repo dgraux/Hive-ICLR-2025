@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8" />
+    <title>C-KG for MuSE</title>
+
+    <script type="text/javascript" src="./src/vis-network.min.js"></script>
+
+    <script src="./src/visual_data.js"></script>
+    <script src="./src/nodes_26_09.js"></script>
+    <script src="./src/edges_26_09.js"></script>
+
+    <style>
+        body {
+            margin: 10px 10px;
+            height: 100%;
+        }
+
+        p {
+            margin: 10px 10px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        code {
+            background: #F1F1F1;
+        }
+
+        a:link,
+        a:visited {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .header {
+            border-radius: 15px;
+            padding: 3px;
+            text-align: center;
+            background-color: rgb(211, 57, 65);
+            color: white;
+            font-size: 14px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .column {
+            float: left;
+        }
+
+        /* right_left column */
+        .column.right_left {
+            width: 50%;
+        }
+
+        /* Left column */
+        .column.left {
+            width: 70%;
+        }
+
+        .column.right {
+            width: 30%;
+        }
+
+        /* Right_right column */
+        .column.right_right {
+            width: 50%;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column.left,
+            .column.right,
+            .column.right_right {
+                width: 10%;
+            }
+        }
+
+        .row {
+            content: "";
+            display: table;
+            clear: both;
+            height: 80%;
+            width: 100%;
+        }
+
+        .page-header {
+            border-radius: 6px;
+            padding: 0px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 1%;
+        }
+
+        .scrollable {
+            border: 1px solid lightgray;
+            border-radius: 6px;
+            padding: 20px;
+            overflow: auto;
+            max-width: 25vw;
+            max-height: 40vh;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 2.5%;
+            margin-left: 2.5%;
+        }
+
+        h1.page-header {
+            background-color: rgb(211, 57, 65);
+            color: white;
+        }
+
+        h2.page-header {
+            background-color: rgb(254, 238, 193);
+            text-align: center;
+        }
+
+        h3.page-header {
+            background-color: rgb(221, 221, 221);
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #F1F1F1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: rgb(238, 238, 238);
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: transparent;
+        }
+
+        table#t01 th {
+            background-color: rgb(218, 229, 241);
+            color: black;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(231, 231, 231, 0.95);
+            overflow-x: hidden;
+            transition: 0.4s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 5%;
+            width: 100%;
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 20%;
+        }
+
+        .overlay a {
+            padding: 2px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        .tree-btn {
+            width: 27px;
+            height: 27px;
+            background-size: cover;
+            cursor: pointer;
+            float: left;
+        }
+    </style>
+
+    <style type="text/css">
+        #mynetwork {
+            width: 95%;
+            height: 75vh;
+            border: 1px solid lightgray;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Capability Knowledge Graph for the MuSE Benchmark</h1>
+    </div>
+
+    <div class="row">
+        <h2 class="page-header" style="display: none;">
+            Capability KG
+            <button id="pauseButton" onclick="toggleInterval()"
+                style="font-size:13px;float: right; margin-top: 3px;"><span>&#9658;</span>Start</button>
+        </h2>
+        <br><br>
+        <div class="column left">
+
+            <div id="mynetwork"></div>
+            <br>
+            <span>
+                <span style="float: left; margin-left: 3vh;"><b>Number of entities: </b><span
+                        id="nodeCount"></span></span>
+                <span style="float: right; margin-right: 4vh;"><b>Number of triples: </b><span
+                        id="edgeCount"></span></span>
+            </span>
+        </div>
+        <div class="column right">
+
+            <div class="column right_left">
+              <h3 class="page-header" width=5% height=25%>Entities</h3>
+                <div style="width: 4vh; height: 2vh; background: #ECD43E; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Models</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #DE5947; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Developers</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #8EDE47; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Tasks</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #9ac7e3; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Languages</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #000000; display: inline-block; margin-left: 5vh;">
+                </div> <span>: License</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #c1e769; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Benchmark</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #9c8acb; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Metric</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #d0cae1; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Score</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #348b40; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Code Block</span>
+            </div>
+            <div class="column right_right">
+              <h3 class="page-header" width=5% height=25%>Relations</h3>
+	      <div style="width: 4vh; height: 2vh;display: inline-block; margin-left: 5vh;"></div> <span></span><br>
+                <div style="width: 4vh; height: 2vh; background: #DE5947;display: inline-block; margin-left: 5vh;">
+                </div> <span>: Developed by</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #8EDE47; display: inline-block;margin-left: 5vh;">
+                </div> <span>: Pipeline Tag</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #9ac7e3; display: inline-block;margin-left: 5vh;">
+                </div> <span>: Language</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #000000; display: inline-block; margin-left: 5vh;">
+                </div> <span>: License Info</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #c1e769; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Performance</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #9c8acb; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Metric</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #d0cae1; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Score</span>
+                <br>
+                <div style="width: 4vh; height: 2vh; background: #348b40; display: inline-block; margin-left: 5vh;">
+                </div> <span>: Python Code</span>
+            </div>
+        </div>
+        <div class="column right">
+            <h3 class="page-header" width=5% height=20%>Details (click a model bubble for more)</h3>
+            <div id="json-container" class="scrollable">
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+            Supplementary material to the submission: "<i>From an LLM
+            swarm to a PDDL-empowered HIVE: planning self-executed
+            instructions in a multi-modal jungle</i>"
+        </div>
+    </footer>
+    <script type="text/javascript">
+        var network;
+        var allNodes;
+        var highlightActive = false;
+
+        var nodesDataset = new vis.DataSet([]);
+        var edgesDataset = new vis.DataSet(edges);
+
+        var updateArray = [];
+        var updateEdgesArray = [];
+
+        var isPaused = false;
+        var interval, jsonInterval;
+        var prompts_data;
+        var current_index = 0;
+
+        var FRAME = 10;
+        var MAX_FRAME = Math.max(...nodes.map(o => o.date));
+
+        // function to draw the network graph
+        function redrawAll() {
+            var container = document.getElementById("mynetwork");
+            var options = {
+                nodes: {
+                    shape: "dot",
+                    scaling: {
+                        min: 10,
+                        max: 30,
+                        label: {
+                            min: 8,
+                            max: 30,
+                            drawThreshold: 12,
+                            maxVisible: 20,
+                        },
+                    },
+                    font: {
+                        size: 12,
+                        face: "Tahoma",
+                    },
+                    color: {
+                        border: 'red',
+                        background: 'red'
+                    },
+                },
+                edges: {
+                    width: 0.5, //0.15,
+                    color: { inherit: "from" },
+                    smooth: {
+                        type: "continuous",
+                    },
+                },
+                "physics": {
+                    "repulsion": {
+                        "springConstant": 0,
+                        "nodeDistance": 0.4
+                    },
+                    stabilization: {
+                        enabled: true,
+                        iterations: 10
+                    },
+                },
+                interaction: {
+                    tooltipDelay: 200,
+                    hideEdgesOnDrag: true,
+                    hideEdgesOnZoom: true,
+                    navigationButtons: true,
+                    keyboard: true,
+                },
+            };
+
+            var data = { nodes: nodesDataset, edges: edgesDataset };
+
+            network = new vis.Network(container, data, options);
+
+            // get a JSON object
+            allNodes = nodesDataset.get({ returnType: "Object" });
+            allEdges = edgesDataset.get({ returnType: "Object" });
+            network.on("click", neighbourhoodHighlight);
+        }
+
+        // function for highlighting nodes and edges
+        function neighbourhoodHighlight(params) {
+            // original edge color
+            for (var edgeId in allEdges) {
+                if (allEdges[edgeId].origColor === undefined) {
+                    allEdges[edgeId].origColor = allEdges[edgeId].color;
+                }
+            }
+            // original node color
+            for (var nodeID in allNodes) {
+                if (allNodes[nodeID].origSize === undefined) {
+                    allNodes[nodeID].origSize = allNodes[nodeID].value;
+                }
+                if (allNodes[nodeID].origColor === undefined) {
+                    allNodes[nodeID].origColor = allNodes[nodeID].color;
+                }
+            }
+            // if something is selected:
+            if (params.nodes.length > 0) {
+                highlightActive = true;
+                var i, j;
+
+
+                var selectedNode = params.nodes[0];
+                var degrees = 2;
+                var content = final_extraction[selectedNode];
+
+                if (content) {
+                    var jsonContainer = document.getElementById("json-container");
+                    jsonContainer.innerHTML = ''; // Clear the previous content
+
+                    var preElement = document.createElement('pre');
+                    var jsonContent = JSON.stringify(content, null, 4);
+                    preElement.innerText = jsonContent;
+
+                    jsonContainer.appendChild(preElement);
+                } else {
+                    document.getElementById("json-container").innerHTML = '';
+                }
+                // mark all nodes as hard to read.
+                for (var nodeId in allNodes) {
+                    allNodes[nodeId].color = allNodes[nodeId].origColor;
+                    allNodes[nodeId].value = 1;
+                    if (allNodes[nodeId].hiddenLabel === undefined) {
+                        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+                        allNodes[nodeId].label = undefined;
+                    }
+                }
+                var connectedNodes = network.getConnectedNodes(selectedNode);
+                var allConnectedNodes = [];
+
+                // get the second degree nodes
+                for (i = 1; i < degrees; i++) {
+                    for (j = 0; j < connectedNodes.length; j++) {
+                        allConnectedNodes = allConnectedNodes.concat(
+                            network.getConnectedNodes(connectedNodes[j])
+                        );
+                    }
+                }
+
+                // all second degree nodes get a different color and their label back
+                for (i = 0; i < allConnectedNodes.length; i++) {
+                    allNodes[allConnectedNodes[i]].color = allNodes[allConnectedNodes[i]].origColor;
+                    allNodes[allConnectedNodes[i]].value = 25;
+                    if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+                        allNodes[allConnectedNodes[i]].label =
+                            allNodes[allConnectedNodes[i]].hiddenLabel;
+                        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+                    }
+                }
+
+                // all first degree nodes get their own color and their label back
+                for (i = 0; i < connectedNodes.length; i++) {
+                    allNodes[connectedNodes[i]].color = allNodes[connectedNodes[i]].origColor;
+                    allNodes[connectedNodes[i]].value = 50;
+                    if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+                        allNodes[connectedNodes[i]].label =
+                            allNodes[connectedNodes[i]].hiddenLabel;
+                        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+                    }
+                }
+
+                // the main node gets its own color and its label back.
+                allNodes[selectedNode].color = allNodes[selectedNode].origColor;
+                allNodes[selectedNode].value = 75;
+                if (allNodes[selectedNode].hiddenLabel !== undefined) {
+                    allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+                    allNodes[selectedNode].hiddenLabel = undefined;
+                }
+                // hide all edges
+                for (var edgeId in allEdges) {
+                    allEdges[edgeId].color = "rgba(200,200,200,0.5)";
+                }
+                // display edges from selected node
+                var connectedEdges = network.getConnectedEdges(selectedNode);
+                for (i = 0; i < connectedEdges.length; i++) {
+                    allEdges[connectedEdges[i]].color = allEdges[connectedEdges[i]].origColor;
+                    allEdges[connectedEdges[i]].width = 3;
+                }
+                // display edges from first degree nodes
+                for (i = 0; i < connectedNodes.length; i++) {
+                    var firstDegreeConnectedEdges = network.getConnectedEdges(connectedNodes[i]);
+                    for (j = 0; j < firstDegreeConnectedEdges.length; j++) {
+                        allEdges[firstDegreeConnectedEdges[j]].color = allEdges[firstDegreeConnectedEdges[j]].origColor;
+                        allEdges[firstDegreeConnectedEdges[j]].width = 3;
+                    }
+                }
+            } else if (highlightActive === true) {
+                // reset all nodes
+                for (var nodeId in allNodes) {
+                    allNodes[nodeId].color = allNodes[nodeID].origColor;
+                    allNodes[nodeId].value = 1;
+                    if (allNodes[nodeId].hiddenLabel !== undefined) {
+                        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+                        allNodes[nodeId].hiddenLabel = undefined;
+                    }
+                }
+
+                // reset all edges to their original color
+                for (var edgeId in allEdges) {
+                    allEdges[edgeId].color = allEdges[edgeId].origColor;
+                    allEdges[edgeId].width = 0.5;
+                }
+                for (var nodeID in allNodes) {
+                    allNodes[nodeID].value = allNodes[nodeID].origSize;
+                    allNodes[nodeID].color = allNodes[nodeID].origColor;
+                }
+
+                var jsonContainer = document.getElementById("json-container");
+                jsonContainer.innerHTML = '';
+                highlightActive = false;
+            }
+
+            // transform the object into an array
+            for (nodeId in allNodes) {
+                if (allNodes.hasOwnProperty(nodeId)) {
+                    updateArray.push(allNodes[nodeId]);
+                }
+            }
+            nodesDataset.update(updateArray);
+
+            // transform the object into an array for edges
+            for (edgeId in allEdges) {
+                if (allEdges.hasOwnProperty(edgeId)) {
+                    updateEdgesArray.push(allEdges[edgeId]);
+                }
+            }
+            edgesDataset.update(updateEdgesArray);
+
+        }
+
+        // function for the "START, PAUSE & RESUME button"
+        function toggleInterval() {
+            if (isPaused) {
+                clearInterval(interval);
+                clearInterval(jsonInterval); // Clear the JSON interval
+                document.getElementById("pauseButton").innerHTML = "&#9658;Resume";
+                isPaused = false;
+            } else {
+                interval = setInterval(addNodes, 1000);
+                document.getElementById("pauseButton").innerHTML = "&#10074;&#10074; Pause";
+                isPaused = true;
+            }
+        }
+
+        // Function to dynamically add data to everything
+        function addNodes() {
+            if (FRAME > MAX_FRAME) {
+                clearInterval(interval);
+                network.fit();
+                document.getElementById("pauseButton").disabled = true;
+                document.getElementById("pauseButton").innerHTML = "&#10004;Loaded";
+            }
+
+            // nodes into the graph
+            var new_nodes = [];
+            new_nodes = nodes.filter(item => item.date < FRAME);
+            nodesDataset.update(new_nodes);
+
+            allNodes = nodesDataset.get({ returnType: "Object" });
+
+            // Displaying the number of nodes and edges currently present in the graph
+            document.getElementById("nodeCount").innerText = Object.keys(allNodes).length;
+            document.getElementById("edgeCount").innerText = Object.keys(allEdges).length;
+
+            FRAME = FRAME + 1;
+        }
+
+        window.onload = function () {
+            redrawAll();
+            toggleInterval();
+        };
+    </script>
+
+</body>
+
+</html>

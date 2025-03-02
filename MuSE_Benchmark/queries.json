@@ -1,0 +1,1381 @@
+[
+    {
+        "input_type": "audio",
+        "output_type": "text",
+        "domains": [
+            "audio"
+        ],
+        "tasks": [
+            "automatic-speech-recognition"
+        ],
+        "input": "Please transcribe the recording for me ./data/audios/audio_1.wav",
+        "idx": 0
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "audio"
+        ],
+        "tasks": [
+            "text-to-audio"
+        ],
+        "input": "Narrate \"Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry. The main story arc concerns Harry's conflict with Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic, and subjugate all wizards and Muggles (non-magical people).\" to me",
+        "idx": 1
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "visual-question-answering"
+        ],
+        "input": "What is in this image? ./data/images/image_1.jpeg",
+        "idx": 2
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "summarisation"
+        ],
+        "tasks": [
+            "abstract-summarisation"
+        ],
+        "input": "Summarize the following:  Never mind cats having nine lives. A stray pooch in Washington State has used up at least three of her own after being hit by a car, apparently whacked on the head with a hammer in a misguided mercy killing and then buried in a field -- only to survive. That's according to Washington State University, where the dog -- a friendly white-and-black bully breed mix now named Theia -- has been receiving care at the Veterinary Teaching Hospital. Four days after her apparent death, the dog managed to stagger to a nearby farm, dirt-covered and emaciated, where she was found by a worker who took her to a vet for help. She was taken in by Moses Lake, Washington, resident Sara Mellado. \"Considering everything that she's been through, she's incredibly gentle and loving,\" Mellado said, according to WSU News. \"She's a true miracle dog and she deserves a good life.\" Theia is only one year old but the dog's brush with death did not leave her unscathed. She suffered a dislocated jaw, leg injuries and a caved-in sinus cavity -- and still requires surgery to help her breathe. The veterinary hospital's Good Samaritan Fund committee awarded some money to help pay for the dog's treatment, but Mellado has set up a fundraising page to help meet the remaining cost of the dog's care. She's also created a Facebook page to keep supporters updated. Donors have already surpassed the $10,000 target, inspired by Theia's tale of survival against the odds. On the fundraising page, Mellado writes, \"She is in desperate need of extensive medical procedures to fix her nasal damage and reset her jaw. I agreed to foster her until she finally found a loving home.\" She is dedicated to making sure Theia gets the medical attention she needs, Mellado adds, and wants to \"make sure she gets placed in a family where this will never happen to her again!\" Any additional funds raised will be \"paid forward\" to help other animals. Theia is not the only animal to apparently rise from the grave in recent weeks. A cat in Tampa, Florida, found seemingly dead after he was hit by a car in January, showed up alive in a neighbor's yard five days after he was buried by his owner. The cat was in bad shape, with maggots covering open wounds on his body and a ruined left eye, but remarkably survived with the help of treatment from the Humane Society.",
+        "idx": 3
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "image-captioning"
+        ],
+        "input": "Write a suitable caption for this image: ./data/images/image_2.jpg",
+        "idx": 4
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition"
+        ],
+        "input": "Identify named entities tokens in: My name is Omar and I live in Zürich.",
+        "idx": 5
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image"
+        ],
+        "input": "Generate an image according to: An epic combat between dragons.",
+        "idx": 6
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "text_generation"
+        ],
+        "tasks": [
+            "text-generation"
+        ],
+        "input": "Write me a poem about moon ",
+        "idx": 7
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "question_answering"
+        ],
+        "tasks": [
+            "question-answering-using-context"
+        ],
+        "input": "Formulate a response to answer 'Who won the golden boot in the FIFA 2022?' based on the following context: Argentina was crowned champions after they won the final against the previous title holder, France, with a score of 4-2 on penalties, following a 3-3 draw after extra time. This victory marked Argentina's third title and their first since 1986. It also established Argentina as the first nation from outside Europe to win the tournament since 2002. French player Kylian Mbappé made history by becoming the first player since Geoff Hurst in the 1966 final to score a hat-trick in a World Cup final. Additionally, Mbappé won the Golden Boot for being the top scorer of the tournament with eight goals. He also became the first player to score in two consecutive finals since Vava of Brazil achieved the same in 1958 and 1962. Argentine captain Lionel Messi was voted the tournament's best player and received the Golden Ball. This achievement is seen by some commentators as the culmination of his career, solidifying his status as one of the greatest players of all time.\n\nTeammates Emiliano Martínez and Enzo Fernández also received accolades; Martínez won the Golden Glove as the tournament's best goalkeeper, and Fernández received the Young Player Award as the tournament's best young player. The tournament set a new record for the highest number of goals scored in the 32-team format with 172 goals, with every participating team scoring at least once. Furthermore, Morocco made history by becoming the first African nation to top the Group stages with 7 points.",
+        "idx": 8
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "machine_translation"
+        ],
+        "tasks": [
+            "translation-xx-to-yy"
+        ],
+        "input": "How do you say 雨中漫步 in English",
+        "idx": 9
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "machine_translation"
+        ],
+        "tasks": [
+            "translation-xx-to-yy"
+        ],
+        "input": "Tranlsate 'Mais ce plateau élevé ne mesurait que quelques toises, et bientôt nous fûmes rentrés dans notre élément.' into English",
+        "idx": 10
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "image-classification"
+        ],
+        "input": "Choose what is in the image from [\"elephant\", \"wolf\", \"dog\", \"tiger\"]  ./data/images/image_3.jpg",
+        "idx": 11
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "audio"
+        ],
+        "tasks": [
+            "text-to-audio"
+        ],
+        "input": "read aloud 'Apelle, figlio di Apollo, fece una palla di pelle di pollo. Tutti i pesci vennero a galla per vedere la palla di pelle di pollo fatta da Apelle, figlio di Apollo.'",
+        "idx": 12
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image"
+        ],
+        "input": "Construct a pictorial representation to illustrate red sports car, forest, mountains, rain",
+        "idx": 13
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "visual-question-answering"
+        ],
+        "input": "Based on the image, answer what is killing this person in this scene? ./data/images/image_4.jpg",
+        "idx": 14
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "summarisation"
+        ],
+        "tasks": [
+            "instruction-based-summarisation"
+        ],
+        "input": "Summarize using 31 words. All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood. Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty. Everyone has the right to life, liberty and security of person. No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms. No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.",
+        "idx": 15
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "image-classification"
+        ],
+        "input": "Classify the image and tell what is it about: ./data/images/image_5.jpg",
+        "idx": 16
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "object-detection"
+        ],
+        "input": "How many people is in the image? ./data/images/image_6.jpg",
+        "idx": 17
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "question_answering"
+        ],
+        "tasks": [
+            "table-question-answering"
+        ],
+        "input": "Provide an answer to 'In which year did beijing host the Olympic Games?' based on the data in this table below {\n    \"year\": [1896, 1900, 1904, 2004, 2008, 2012],\n    \"city\": [\"athens\", \"paris\", \"st. louis\", \"athens\", \"beijing\", \"london\"]\n}",
+        "idx": 18
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "object-detection"
+        ],
+        "input": "How many cartoon characters are in this image? ./data/images/image_7.jpg",
+        "idx": 19
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "question_answering"
+        ],
+        "tasks": [
+            "open-question-answering"
+        ],
+        "input": "Who was reigning over Belgium in 1980?",
+        "idx": 20
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "text_generation"
+        ],
+        "tasks": [
+            "text-generation"
+        ],
+        "input": "Write me a story that shares the same style of: A Tale of Two Cities",
+        "idx": 21
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition"
+        ],
+        "input": "What are the named entities in 'Argentina was crowned champions after they won the final against the previous title holder, France, with a score of 4-2 on penalties, following a 3-3 draw after extra time. This victory marked Argentina's third title and their first since 1986. It also established Argentina as the first nation from outside Europe to win the tournament since 2002. French player Kylian Mbappé made history by becoming the first player since Geoff Hurst in the 1966 final to score a hat-trick in a World Cup final. Additionally, Mbappé won the Golden Boot for being the top scorer of the tournament with eight goals. He also became the first player to score in two consecutive finals since Vava of Brazil achieved the same in 1958 and 1962. Argentine captain Lionel Messi was voted the tournament's best player and received the Golden Ball. This achievement is seen by some commentators as the culmination of his career, solidifying his status as one of the greatest players of all time.\n\nTeammates Emiliano Martínez and Enzo Fernández also received accolades; Martínez won the Golden Glove as the tournament's best goalkeeper, and Fernández received the Young Player Award as the tournament's best young player. The tournament set a new record for the highest number of goals scored in the 32-team format with 172 goals, with every participating team scoring at least once. Furthermore, Morocco made history by becoming the first African nation to top the Group stages with 7 points.'",
+        "idx": 22
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text"
+        ],
+        "tasks": [
+            "image-captioning"
+        ],
+        "input": "Can you please convert this image './data/images/image_8.jpg'  to text?",
+        "idx": 23
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "text_generation"
+        ],
+        "tasks": [
+            "text-generation"
+        ],
+        "input": "I apologise in advance for this inconvenience and I remain at your disposal should further information is required. Is this piece of text grammatically and syntactically correct?",
+        "idx": 24
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "machine_translation",
+            "image_generation"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "text-to-image"
+        ],
+        "input": "Translate 红色跑车，森林，山，雨 text to English and generate an image for me",
+        "idx": 25
+    },
+    {
+        "input_type": "audio,text",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "question_answering"
+        ],
+        "tasks": [
+            "automatic-speech-recognition",
+            "question-answering-using-context"
+        ],
+        "input": "Tell me How long does it take to develop the Game Boy? below based on the transcription of the audio from ./data/audios/audio_2.wav",
+        "idx": 26
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "summarisation",
+            "question_answering"
+        ],
+        "tasks": [
+            "question-answering-using-context",
+            "extractive-summarisation"
+        ],
+        "input": "Summarise the following text and use it as context to answer When did the riots begin? based on the summary of text: Far-right protesters:\nGovernment of the United Kingdom:\nNorthern Ireland Executive\nCounter-protesters:\nFar-right riots have taken place in various locations in England and Northern Ireland, since 30 July 2024 following a mass stabbing in Southport on 29 July in which three children were killed. The riots have involved looting, arson, and racist attacks, and, for England, have been the worst disorder with the largest police mobilisation since the 2011 England riots.\nThe initial riot in Southport and subsequent riots elsewhere have been linked to disinformation on social media about the identity of the Southport attacker, in addition to pre-existing Islamophobic, racist, and anti-immigrant sentiment. Fascist groups spread misinformation online, and members of the neo-Nazi group Patriotic Alternative were involved in the Southport riot. Counter-protesters including Stand Up to Racism, anti-fascist and anti-racist groups, local Muslims, and other members of local communities, have opposed the rioters, with clashes occurring between opposing sides since the unrest began.\nThe riots began on 30 July when a crowd, including supporters of the Islamophobic and now-disbanded English Defence League, gathered outside Southport Mosque.",
+        "idx": 27
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "text_generation"
+        ],
+        "tasks": [
+            "visual-question-answering",
+            "text-generation"
+        ],
+        "input": "Using VQA, tell me which city is present in the image? ./data/images/image_9.jpg Generate a paragraph about events hosted.",
+        "idx": 28
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "question_answering",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "question-answering-using-context"
+        ],
+        "input": "Please provide an answer to Who won the golden ball in the FIFA 2022? below and create an image for illustration. Context=Argentina was crowned champions after they won the final against the previous title holder, France, with a score of 4-2 on penalties, following a 3-3 draw after extra time. This victory marked Argentina's third title and their first since 1986. It also established Argentina as the first nation from outside Europe to win the tournament since 2002. French player Kylian Mbappé made history by becoming the first player since Geoff Hurst in the 1966 final to score a hat-trick in a World Cup final. Additionally, Mbappé won the Golden Boot for being the top scorer of the tournament with eight goals. He also became the first player to score in two consecutive finals since Vava of Brazil achieved the same in 1958 and 1962. Argentine captain Lionel Messi was voted the tournament's best player and received the Golden Ball. This achievement is seen by some commentators as the culmination of his career, solidifying his status as one of the greatest players of all time.\n\nTeammates Emiliano Martínez and Enzo Fernández also received accolades; Martínez won the Golden Glove as the tournament's best goalkeeper, and Fernández received the Young Player Award as the tournament's best young player. The tournament set a new record for the highest number of goals scored in the 32-team format with 172 goals, with every participating team scoring at least once. Furthermore, Morocco made history by becoming the first African nation to top the Group stages with 7 points",
+        "idx": 29
+    },
+    {
+        "input_type": "audio,text",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "question_answering"
+        ],
+        "tasks": [
+            "question-answering-using-context",
+            "automatic-speech-recognition"
+        ],
+        "input": "Please answer 'where college did he graduate from?' based on the background in audio transcription of the discussion of Rajiv Bapna with a reporter ./data/audios/audio_3.wav",
+        "idx": 30
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "question_answering"
+        ],
+        "tasks": [
+            "image-captioning",
+            "open-question-answering"
+        ],
+        "input": "What is happening in this image ./data/images/image_10.jpg and why it is  an important moment for basketball fans?",
+        "idx": 31
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "text_generation"
+        ],
+        "tasks": [
+            "image-captioning",
+            "text-generation"
+        ],
+        "input": "Write me a sonnet about this image ./data/images/image_11.jpg",
+        "idx": 32
+    },
+    {
+        "input_type": "audio",
+        "output_type": "image",
+        "domains": [
+            "audio",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "automatic-speech-recognition"
+        ],
+        "input": "Build a pictorial presentation of the flower after deciphering the audio ./data/audios/audio_4.wav ",
+        "idx": 33
+    },
+    {
+        "input_type": "image",
+        "output_type": "image",
+        "domains": [
+            "image_to_text",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "image-captioning"
+        ],
+        "input": "Describe this image ./data/images/image_11.jpg and then re-generate an image one using the description text",
+        "idx": 34
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "image_generation",
+            "image_to_text"
+        ],
+        "tasks": [
+            "visual-question-answering",
+            "text-to-image"
+        ],
+        "input": "Generate an image with puppies and kittens playing in a household, and answer How many dogs are there in the generated figure?",
+        "idx": 35
+    },
+    {
+        "input_type": "audio",
+        "output_type": "image",
+        "domains": [
+            "audio",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "automatic-speech-recognition"
+        ],
+        "input": "Convert the audio to text and then whip up a new photo ./data/audios/audio_5.wav",
+        "idx": 36
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "summarisation",
+            "image_generation"
+        ],
+        "tasks": [
+            "abstract-summarisation",
+            "text-to-image"
+        ],
+        "input": "Create a brief overview of the text and generate a related image. The Industrial Revolution, which is often divided into the First and Second Industrial Revolutions, was a transformative period where the global economy shifted from agrarian-based systems, which had followed the Agricultural Revolution, to more widespread, efficient, and stable manufacturing processes. This shift began in Great Britain and eventually spread to continental Europe and the United States during the period from around 1760 to about 1820–1840. The revolution saw a transition from hand production methods to the use of machines, introduction of new chemical manufacturing and iron production processes, increased use of water and steam power, development of machine tools, and the rise of the mechanized factory system. As a result, output greatly increased, leading to an unprecedented rise in population and population growth rates.\n\nThe textile industry was the pioneer in adopting these modern production methods and soon became the dominant industry in terms of employment, value of output, and capital invested. Many of the technological and architectural innovations of this era originated in Britain. By the mid-18th century, Britain had established itself as the world's leading commercial nation, controlling a global trading empire with colonies in North America and the Caribbean. It also held major military and political influence over the Indian subcontinent, particularly in the proto-industrialised region of Mughal Bengal, through the activities of the East India Company. \n\nThe development of trade and the emergence of business were significant drivers of the Industrial Revolution. Legal developments also played a role, such as courts upholding property rights. An entrepreneurial spirit and a consumer revolution further fueled industrialization in Britain, which after 1800, was emulated in Belgium, the United States, and France.",
+        "idx": 37
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "summarisation",
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition",
+            "extractive-summarisation"
+        ],
+        "input": "Do summarisation extract then find name entiti of 'Captain Ralph Crewe, a wealthy English widower, has been raising his only child and daughter, Sara, in India where he is stationed with the British Army. Because the Indian climate is considered too harsh for their children, British families living there traditionally send their children to boarding school back home in England. The Captain enrolls his seven-year-old daughter at an all-girls boarding school in London and dotes on his daughter so much that he orders and pays the haughty headmistress, Miss Minchin, for special treatment and exceptional luxuries for Sara, such as a private room for her with a personal maid and a separate sitting room (see parlour boarder), along with Sara's own private carriage and a pony. Miss Minchin openly fawns over Sara for her money, but is secretly envious and dislikes Sara almost from the outset.",
+        "idx": 38
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "machine_translation"
+        ],
+        "tasks": [
+            "visual-question-answering",
+            "translation-xx-to-yy"
+        ],
+        "input": "Answer What is behind the bench ? based on the image ./data/images/image_12.jpg and translate the answer in to Chinese",
+        "idx": 39
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_image",
+            "image_to_text"
+        ],
+        "tasks": [
+            "depth-estimation",
+            "image-captioning"
+        ],
+        "input": "Given the following RGB image ./data/images/image_3.jpg, predict the depth map and use text to describe the map",
+        "idx": 40
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "text_classification"
+        ],
+        "tasks": [
+            "image-captioning",
+            "text-classification"
+        ],
+        "input": "describe the image and classify the generated text [wood, plastic, cotton, gold] ./data/images/image_12.jpg",
+        "idx": 41
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "question_answering",
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition",
+            "table-question-answering"
+        ],
+        "input": "Answer based on the data in table, which company has an office location of Seattle? Classify the token in answer cause I want to make sure an organisation is returned as a response [{'Name': 'John Doe', 'Position': 'CEO', 'Company': 'OpenAI', 'Office Location': 'San Francisco', 'Announcement Date': 'January 1, 2023'}, {'Name': 'Jane Smith', 'Position': 'CTO', 'Company': 'Google', 'Office Location': 'New York', 'Announcement Date': 'February 2, 2023'}, {'Name': 'Alice Lee', 'Position': 'CFO', 'Company': 'Microsoft', 'Office Location': 'Seattle', 'Announcement Date': 'March 3, 2023'}]",
+        "idx": 42
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "question_answering",
+            "machine_translation"
+        ],
+        "tasks": [
+            "open-question-answering",
+            "translation-xx-to-yy"
+        ],
+        "input": "Tell me who won the golden ball in FIFA 2018? translate the answer into Spanish",
+        "idx": 43
+    },
+    {
+        "input_type": "image",
+        "output_type": "audio",
+        "domains": [
+            "image_to_text",
+            "audio"
+        ],
+        "tasks": [
+            "image-classification",
+            "text-to-audio"
+        ],
+        "input": "Classify the animal in the image ./data/images/image_1.jpeg and read the answer by audio",
+        "idx": 44
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "machine_translation"
+        ],
+        "tasks": [
+            "object-detection",
+            "translation-xx-to-yy"
+        ],
+        "input": "Detect the object in this ./data/images/image_3.jpg and translate the answer into Japanese",
+        "idx": 45
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "token_classification",
+            "machine_translation"
+        ],
+        "tasks": [
+            "named-entity-recognition",
+            "translation-xx-to-yy"
+        ],
+        "input": "Given the following text, classify each token as either a \"Person,\" \"Organization,\" \"Location,\" \"Date,\" or \"Other\" and then tranlate into Chinese\\n\\n Joseph Robinette Biden Jr (born November 20, 1942) is an American politician who is the 46th and current president of the United States since 2021. A member of the Democratic Party, he previously served as the 47th vice president from 2009 to 2017 under President Barack Obama and represented Delaware in the United States Senate from 1973 to 2009.",
+        "idx": 46
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "text_classification",
+            "text_generation"
+        ],
+        "tasks": [
+            "text-classification",
+            "text-generation"
+        ],
+        "input": "Write an email related to the review and classify if the email sounds Posibite, Uncr, doubtful, Negative or neutral. Review:The product arrived on time and was well-packaged, but the quality was not as good as I expected. The customer service, however, was excellent and resolved my issues promptly.",
+        "idx": 47
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "text_generation"
+        ],
+        "tasks": [
+            "visual-question-answering",
+            "text-generation"
+        ],
+        "input": "Based on the visual, tell me what is behind the bench? and generate a story for this picture ./data/images/image_12.jpg",
+        "idx": 48
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "text_generation",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "text-generation"
+        ],
+        "input": "Write a short story about J. Robert  and create a visual interpretation based on the story",
+        "idx": 49
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "machine_translation",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "translation-xx-to-yy"
+        ],
+        "input": "Translate 'Une scène sereine au bord du lac au coucher du soleil, avec une surface d'eau calme reflétant les couleurs vibrantes du ciel. En arrière-plan, il y a des montagnes majestueuses partiellement couvertes de neige. Au premier plan se trouve un petit quai en bois qui s'étend dans le lac, auquel est attaché un bateau à rames solitaire. Autour du lac se trouvent des arbres verts luxuriants et quelques fleurs sauvages. Le ciel est peint dans des teintes d'orange, de rose et de violet alors que le soleil se couche, jetant une lueur dorée sur l'ensemble du paysage.\n' into english and give me it's visual ",
+        "idx": 50
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "question_answering",
+            "audio"
+        ],
+        "tasks": [
+            "table-question-answering",
+            "text-to-audio"
+        ],
+        "input": "Answer based on the table \nwho has the highest salary in the IT department? and convert the answer into audio. \\n{\n  \"employees\": [\n    {\n      \"Employee ID\": \"001\",\n      \"Name\": \"Alice\",\n      \"Department\": \"HR\",\n      \"Salary\": 60000,\n      \"Years of Service\": 5\n    },\n    {\n      \"Employee ID\": \"002\",\n      \"Name\": \"Bob\",\n      \"Department\": \"IT\",\n      \"Salary\": 75000,\n      \"Years of Service\": 3\n    },\n    {\n      \"Employee ID\": \"003\",\n      \"Name\": \"Charlie\",\n      \"Department\": \"Marketing\",\n      \"Salary\": 50000,\n      \"Years of Service\": 2\n    },\n    {\n      \"Employee ID\": \"004\",\n      \"Name\": \"David\",\n      \"Department\": \"Sales\",\n      \"Salary\": 45000,\n      \"Years of Service\": 4\n    },\n    {\n      \"Employee ID\": \"005\",\n      \"Name\": \"Eve\",\n      \"Department\": \"IT\",\n      \"Salary\": 80000,\n      \"Years of Service\": 6\n    }\n  ]\n}",
+        "idx": 51
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "image_generation",
+            "image_to_text"
+        ],
+        "tasks": [
+            "text-to-image",
+            "image-classification"
+        ],
+        "input": "Picture 'A cute white-brown cat' into image and classify the generated image",
+        "idx": 52
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "machine_translation"
+        ],
+        "tasks": [
+            "image-classification",
+            "translation-xx-to-yy"
+        ],
+        "input": "Classify the image and translate the answer into Chinese. ./data/images/image_8.jpg",
+        "idx": 53
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "summarisation",
+            "text_classification"
+        ],
+        "tasks": [
+            "text-classification",
+            "abstract-summarisation"
+        ],
+        "input": "Given the following article, first provide a brief summary of the main points discussed in the article below and then classify text topic of summary into one of ('Politics', 'Technology', 'Health', 'Sports', 'Entertainment') and.Scientists have made a breakthrough in renewable energy technology by developing a new type of solar cell that significantly increases efficiency. The team from the University of Cambridge has designed a solar cell that can capture more sunlight and convert it into electricity more effectively than traditional cells. This innovation could lead to more affordable and sustainable energy solutions in the future. The researchers believe that with further development, this technology could be integrated into commercial solar panels within the next decade. This advancement is a major step forward in the effort to combat climate change and reduce reliance on fossil fuels.",
+        "idx": 54
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "machine_translation",
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition",
+            "translation-xx-to-yy"
+        ],
+        "input": "Translate the following French sentence into English and identify the entity tokens in Marie Curie a découvert le radium en 1898 à Paris.",
+        "idx": 55
+    },
+    {
+        "input_type": "audio,text",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "text_classification"
+        ],
+        "tasks": [
+            "text-classification",
+            "automatic-speech-recognition"
+        ],
+        "input": "I have a voice recording that contains a customer service interaction ./data/audios/audio_6.wav. Please transcribe the voice into text and  Classify the transcribed text into categories such as 'Complaint', 'Inquiry','Feedback', or 'Other'.",
+        "idx": 56
+    },
+    {
+        "input_type": "audio,text",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "question_answering"
+        ],
+        "tasks": [
+            "question-answering-using-context",
+            "automatic-speech-recognition"
+        ],
+        "input": "Use audio transcription as context and answer 'what is the country starting the war whom the associated speech is about?' from ./data/audios/audio_6.wav",
+        "idx": 57
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "question_answering",
+            "image_generation"
+        ],
+        "tasks": [
+            "open-question-answering",
+            "text-to-image"
+        ],
+        "input": "What is the name 1st president of USA? Give me a portrait as well",
+        "idx": 58
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "image_generation",
+            "text_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "text-generation"
+        ],
+        "input": "Write a 15 word scene and generate an image related to red sports car in mountains",
+        "idx": 59
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "machine_translation",
+            "audio"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "text-to-audio"
+        ],
+        "input": "Translate the lyrics into Chinese and read text aloud in audio. Lyrics: We're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nWe've known each other for so long\nYour heart's been aching, but you're too shy to say it (say it)\nInside, we both know what's been going on (going on)\nWe know the game and we're gonna play it\nAnd if you ask me how I'm feeling\nDon't tell me you're too blind to see\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nWe've known each other for so long\nYour heart's been aching, but you're too shy to say it (to say it)\nInside, we both know what's been going on (going on)\nWe know the game and we're gonna play it\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you",
+        "idx": 60
+    },
+    {
+        "input_type": "audio",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "machine_translation"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "automatic-speech-recognition"
+        ],
+        "input": "My hearing is impaired, can you translate the audio to chinese? ./data/audios/audio_2.wav",
+        "idx": 61
+    },
+    {
+        "input_type": "image",
+        "output_type": "audio",
+        "domains": [
+            "image_to_text",
+            "audio"
+        ],
+        "tasks": [
+            "object-detection",
+            "text-to-audio"
+        ],
+        "input": "Narrate audio of the objects in ./data/images/image_13.jpg",
+        "idx": 62
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "machine_translation"
+        ],
+        "tasks": [
+            "visual-question-answering",
+            "translation-xx-to-yy"
+        ],
+        "input": "Have a look at the image (./data/images/image_14.jpg) and answer what is the table made of? in Chinese",
+        "idx": 63
+    },
+    {
+        "input_type": "audio",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "summarisation"
+        ],
+        "tasks": [
+            "abstract-summarisation",
+            "automatic-speech-recognition"
+        ],
+        "input": "write a summary of the transcription of this speech ./data/audios/audio_6.wav",
+        "idx": 64
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "machine_translation",
+            "audio"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "text-to-audio"
+        ],
+        "input": "Read me an English version of Demain, dès l'aube, à l'heure où blanchit la campagne,\nJe partirai. Vois-tu, je sais que tu m'attends.\nJ'irai par la forêt, j'irai par la montagne.\nJe ne puis demeurer loin de toi plus longtemps.",
+        "idx": 65
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "machine_translation",
+            "audio"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "text-to-audio"
+        ],
+        "input": "Translate and narate '笔笔' in english",
+        "idx": 66
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "summarisation",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "instruction-based-summarisation"
+        ],
+        "input": "summarise the following text in one sentence and generate an image for it. Autumn, also known as fall in American English,[1] is one of the four temperate seasons on Earth. Outside the tropics, autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere). Autumn is the season when the duration of daylight becomes noticeably shorter and the temperature cools considerably. Day length decreases and night length increases as the season progresses until the winter solstice in December (Northern Hemisphere) and June (Southern Hemisphere). One of its main features in temperate climates is the striking change in colour for the leaves of deciduous trees as they prepare to shed.\n",
+        "idx": 67
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "text_generation",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "text-generation"
+        ],
+        "input": "Read the given paragraph and generate a title, then give me a cover image based on that title.\\nParagraph: \n\n\n\n\n\nFar-right protesters:\n\n\nGovernment of the United Kingdom:\n\n\nNorthern Ireland Executive\n\n\nCounter-protesters:\n\n\nFar-right riots have taken place in various locations in England and Northern Ireland, since 30 July 2024 following a mass stabbing in Southport on 29 July in which three children were killed. The riots have involved looting, arson, and racist attacks, and, for England, have been the worst disorder with the largest police mobilisation since the 2011 England riots.\n\n\nThe initial riot in Southport and subsequent riots elsewhere have been linked to disinformation on social media about the identity of the Southport attacker, in addition to pre-existing Islamophobic, racist, and anti-immigrant sentiment. Fascist groups spread misinformation online, and members of the neo-Nazi group Patriotic Alternative were involved in the Southport riot. Counter-protesters including Stand Up to Racism, anti-fascist and anti-racist groups, local Muslims, and other members of local communities, have opposed the rioters, with clashes occurring between opposing sides since the unrest began.\n\n\nThe riots began on 30 July when a crowd, including supporters of the Islamophobic and now-disbanded English Defence League, gathered outside Southport Mosque. Some protesters wrongly believed that the suspect in the mass stabbing was a Muslim immigrant due to misinformation on social media platforms. Protestors attacked police officers, threw objects at the mosque, and set a police vehicle on fire. The riot left over fifty officers injured, some seriously; three police dogs wounded, and multiple arrests were made.\n\n\nThe unrest spread to other parts of England, and also Belfast in Northern Ireland, in the following days. On 31 July, over 100 protesters were arrested in London and demonstrations occurred in Manchester, Hartlepool and Aldershot. On 2 August, rioting took place in Sunderland, where a police station was set on fire, three police officers were injured, and several people were arrested. On 3 August, far-right protesters clashed with police and counter-protesters in several locations, with a library in Liverpool being set on fire. On 4 August, rioters smashed windows and set fire to Holiday Inn Express buildings in both Rotherham and Tamworth that were housing migrants. In Middlesbrough, rioters smashed windows and targeted houses and cars in a residential area, and in Bolton, far-right protesters and counter-protesters clashed with police.\n\n\nOverview\n\nBackground\n\nOn 29 July 2024, a knife attack took place at a children's yoga and dance workshop. Three children were killed and eight other children were injured, with five of them in critical condition. Two adults at the event were also critically injured. When the prime minister laid flowers in Southport the following day, he was met with \"hostile shouts\" from some of the public, with one asking, \"How many more, Starmer? When are you going to do something?\"\n\n\nFollowing the stabbing, there was incorrect speculation online about the name of the suspected attacker. Misinformation and disinformation, including false claims about the suspect's identity, nationality, religion and immigration status, were circulated on social media by high-profile far-right accounts, including by Tommy Robinson, a far-right activist who founded the now-disbanded anti-Islam English Defence League (EDL) in 2009. The false claim that the perpetrator was named \"Ali Al-Shakati\" is believed to have originated from the X (formerly Twitter) account of an anti-lockdown campaigner and gained a greater audience when repeated by the website Channel 3 Now, a Russian-linked site known for spreading fake news. Russia was accused of being behind a deliberate disinformation campaign, and as of 5 August, the National Crime Agency and Department for Science, Innovation and Technology are investigating such claims. A newly created \"Southport-themed\" Telegram group became inundated with misinformation, including from the far-right National Front, prior to dissemination on social media platforms, as well as disinformation spread on social media by the neo-Nazi group British Movement.\n\n\nMerseyside Police attempted to quell speculation by confirming that the name being circulated was not connected to the case and was not the suspect. The police initially released the information that the suspect was a male, aged seventeen, from Banks in Lancashire, though born in Cardiff. It was later reported that the suspect was a British citizen born to Rwandan parents, that he had moved to the Southport area in 2013, and that he had no known links to Islam. The spread of misinformation has widely been given as the cause of the Southport riots.\n\n\nAndrew Chadwick, a professor of political communication at Loughborough University, described a viral tweet as being \"deliberately fabricated to generate hostility toward ethnic minorities and immigrants, and it's a potentially Islamophobic piece of propaganda\". Matthew Feldman, an expert on right-wing extremism, commented \"It is difficult to think of a much better example of online harms breaching the real world than a fake story demonising Muslims and people of colour and leading to riots on the streets\". Former security minister Stephen McPartland accused Russia and Vladimir Putin's regime of involvement in the campaign of misinformation, describing it as \"part of the Russian playbook\". Guardian left-wing columnist Owen Jones blamed X as a \"cesspit of disinformation and far-right talking points\" for the spread of unverified claims. Days later, The Independent reported that misinformation and conspiracy regarding the suspect remained and appeared to be the motivating force behind the protests.\n\n\nIn a separate event, a woman was stabbed in Stirling on 3 August 2024. Tommy Robinson wrongly claimed on social media that an \"alleged Muslim\" had been involved in an incident in which three women had been stabbed. Other accounts spread the misinformation, contributing to tensions. A man was arrested by the police, who described him as white and local to the area. The release of these details was unusual and done to curb misinformation. The head of anti-racism charity Hope not Hate also apologised after false claims of a separate far-right acid attack on a Muslim woman.\n\n\nAnalysis\n\nFor the Southport riot, far-right activists had been promoting the demonstration that started in Southport, prior to involvement in the riot. Huff Post described far-right activists as having \"hijacked\" the vigil for the victims, and the Manchester Evening News reported \"far right thugs, fuelled by lies, sought to exploit the tragedy\". Merseyside Police said on the night of the riot that they believed supporters of the EDL were involved in and organised the disturbances. Hope Not Hate described them as supporters of Tommy Robinson. Robinson denied the EDL were involved, while arguing that the anger in Southport was justified. A prominent member of the neo-Nazi group Patriotic Alternative took part in the riot and another member helped to promote the event.\n\n\nThe protests and riots were fuelled by wider Islamophobia, concerns over crime, anti-migration sentiment, xenophobia, nationalism and against perceived biases by the police and media. The Independent described the riots as being \"sparked by Islamophobic and racist sentiments\", with examples of mosques being targeted and several violent racist attacks on ethnic minorities by the far-right in Liverpool, Hull and Bristol. Politico described the cause of the violence as \"Islamophobic resentment that had long brewed across the United Kingdom\" as having surfaced, citing hate crimes associated with British Muslims as being the highest among any religious group in the country, according to government data. According to Hope not Hate, although the stabbing in Southport was the catalyst, \"most of these protests and riots are more broadly focused, expressive of a wider hostility to multiculturalism, anti-Muslim and anti-migrant prejudice, as well as a visceral streak of populist anti-Government sentiment\".\n\n\nExtremism experts attributed the large far-right rally in London, led by Robinson a week prior to the protests as having boosted supporters, with Robinson playing a significant role in inciting outrage. The Financial Times described the evolution of the movement from \"more formally organised white-supremacist groups into personality-driven splinter groups\", while capitalising on social media for outreach and organising. Police officials have described organisers as being in distinct far-right groups, organising online under banners such as \"enough is enough\", \"save our kids\", and \"stop the boats\" (the latter in reference to migrant crossings of the English Channel), with Robinson being a central figure in calls to hold riots.\n\n\nTimeline\n\n30 July\n\nAt approximately 20:05 BST, hundreds of protesters gathered outside Southport Mosque chanting, \"No surrender!\" and \"English till I die!\" Within several minutes, protesters clashed with police. Protesters barricaded themselves and shouted \"Tommy Robinson\", a far-right activist who founded the EDL. Robinson had been arrested and then released two days prior, before he fled the country, failing to appear at a High Court hearing to which he had been summonsed for alleged contempt of court.\n\n\nBy 20:37, protesters began throwing objects at the mosque and police, leaving one officer injured. A police van was set alight as police deployed smoke canisters. Merseyside Police requested officers from Greater Manchester Police, Cheshire Constabulary, Lancashire Police, and North Wales Police. Riot police cleared the area near the mosque by 21:14 and protesters began dispersing shortly after that as night fell. By 23:14, the riot had ended. A local corner shop was damaged.\n\n\nThe Merseyside Police Federation said that over fifty officers were injured at the Southport incident, with North West Ambulance Service reporting that twenty-seven were hospitalised and twelve were discharged at the scene. Merseyside Police stated that eight officers were seriously injured and three police dogs were wounded. One man from Standish was arrested on suspicion of possessing a bladed article. Police put in place a 24-hour Section 60 Order giving officers further stop-and-search authority, and a Section 34 Order, allowing police to direct people who are engaging in certain activities away from the area. Merseyside Police deployed additional officers after the riot, and ambulance resources remained.\n\n\nThe following day, the anti-fascist group Hope Not Hate warned of the possibility of further demonstrations by far-right groups in several cities across the country. Concerns of further violence were echoed by Merseyside Police.\n\n\n31 July\n\nIn London, the Metropolitan Police established public order conditions for a protest dubbed \"Enough is Enough\", the slogan of Patriotic Alternative, where far-right demonstrators clashed with police near Downing Street on 31 July. The Metropolitan Police said that 111 people were arrested for offences including assaults on officers, possession of knives and offensive weapons and violent disorder.\n\n\nOn the evening of 31 July, a group of approximately 40 demonstrators gathered outside a Holiday Inn in Manchester, which was purportedly housing asylum seekers. Chants were heard of the group exclaiming \"we want our country back\", a phrase associated with far-right groups in the UK. Two people were arrested.\n\n\nDemonstrations also broke out in the County Durham town of Hartlepool on the same evening. Objects including eggs and glass bottles were thrown at the police in response to the latter's riot shields. Several police officers were injured and a police car was set alight. Eight people were arrested.\n\n\nThere was also a protest outside a hotel housing migrants in Aldershot. Hampshire's police and crime commissioner Donna Jones described \"mob-type\" behaviour, and Hampshire Constabulary reported a crowd of 200 people, with a minority throwing objects and subjecting people to racial abuse.\n\n\nThe organiser of a march in Middlesbrough was arrested by Cleveland Police on suspicion of possessing a firearm with intent to cause fear of violence.\n\n\n2 August\n\nOn the evening of 2 August, protestors gathered in Sunderland's Keel Square for a march around the city centre. Mounted officers from Northumbria Police attended the demonstration along with officers in riot gear. Police and protestors clashed outside a mosque in St Mark's Road after some of the marchers attempted to approach the building. The protestors chanted \"save our kids\" and \"we want our country back\", as well as slogans in support of Tommy Robinson, and Islamophobic slurs. An Uber taxi was burnt and shops looted. Sunderland Central police station was set alight, and trains to Sunderland station were cancelled or diverted to St Peter's. Four officers were hospitalised and 12 people were arrested.\n\n\nAround a hundred protestors shouting anti-immigrant slogans gathered in Liverpool on the same evening.\n\n\n3 August\n\nOn 3 August, numerous far-right rallies and counter-protests occurred in England. In Leeds, approximately 150 protesters chanted slogans such as \"You're not English anymore\", with around 250 counter-protesters chanting \"Say it loud, say it clear, refugees are welcome here\". In Manchester, 150 protesters took part in the \"Enough is Enough\" protest, while 350 locals turned out for the \"Stop the Far Right\" counter-protest. In Nottingham, clashes were reported between opposing groups of protesters.\n\n\nIn Liverpool, two groups who had been taking part in separate protests joined up at the Pier Head before moving on to The Strand and Church Street. Many shops were damaged and looted as a library in Walton was torched and wheelie bins set alight. A police officer was assaulted after being pushed off his motorbike and another hit in the head by a chair as protestors threw bottles, bricks and a flare at officers. 23 people were arrested in relation to the disorder as two police officers were hospitalised with a broken jaw and broken nose respectively.\n\n\nIn Stoke-on-Trent, a far-right march clashed with local counter-protest groups outside of a local mosque, with missiles thrown at riot police. Three officers were injured and 10 people were arrested.\n\n\nIn Manchester, 'scuffles' with police led to two arrests. Two people were arrested in Leicester city centre and a protest on The Headrow in Leeds led to one arrest.\n\n\n20 arrests were made in Blackpool after violent disorder broke out amongst nearly 1,000 protestors, with bottles and other projectiles thrown at police. Attendees of the nearby annual punk festival Rebellion formed an anti-fascist counter-protest leading to a stand-off in which chairs, bottles and planks of wood were thrown. Police reported there had also been \"minor disruption\" in Blackburn and Preston.\n\n\nPolice in Bristol made multiple arrests and closed roads after protestors gathered in Castle Park, where they clashed with counter-protesters who outnumbered them. Anti-racist protesters left Castle Park and linked arms with others in front of the Mercure Hotel after receiving information that far-right protesters might target the location, as it housed asylum seekers. The anti-racist protesters arrived at the hotel shortly before the far-right group and the police. The protesters faced violent attempts by the far-right to force their way through the protective line and into the hotel. Avon and Somerset Police arrested 14 people in relation to the protests.\n\n\n25 people were arrested in Hull, where rioters attacked police with bricks and fireworks, set vehicles alight and looted several shops, including a Shoe Zone which was set on fire, in unrest which left 11 police officers injured. A video circulated online of a mob of rioters surrounding and attacking an Asian man in his car saying the word \"kill\" while shouting racial slurs. A hotel housing asylum seekers was also attacked, with rioters throwing bricks and smashing windows.\n\n\nOutside England, there were also protests and violence in Belfast, Northern Ireland. Anti-immigration and anti-racism demonstrators faced off outside Belfast City Hall and were kept apart by riot police. A firework was thrown toward the anti-racism demonstration. The anti-immigration protesters then attempted to march to the Belfast Islamic Centre, but were blocked by police. Instead, they attacked several immigrant-owned businesses on Botanic Avenue. Violence continued in the Sandy Row area that night, where a supermarket and a café owned by immigrants were burnt out. Cars were burned and missiles were thrown at police, injuring three officers. Four people were arrested for the violence. In Cardiff, reports of a planned far-right protest, which never materialised, led to an anti-racism demonstration.\n\n\nA woman was stabbed on King Street in Stirling and there was online speculation from anti-Islam campaigner Tommy Robinson that the attacker was Muslim. Police Scotland issued a public statement stating that the attacker was a white man and had been arrested.\n\n\nIn Doncaster, a planned far-right protest was cancelled after only one person showed up.\n\n\n4 August\n\nIn Wath upon Dearne in the Metropolitan Borough of Rotherham, there were demonstrations by anti-immigration and anti-racism protestors, with the former outnumbering the latter. There was then rioting outside a Holiday Inn Express hotel which had housed asylum seekers, where mask-wearing anti-immigration demonstrators threw objects at the building, smashing a number of windows and setting the building on fire. They were also heard to chant \"Get them out\" and \"Yorkshire\". South Yorkshire Police reported that 51 officers, as well as police dogs and horses, were injured during the violence in Rotherham, where concrete blocks, chairs, fire extinguishers and tree branches were thrown at them.\n\n\nGreater Manchester Police issued a Section 34 dispersal notice covering Bolton. There were again demonstrations by far-right protesters and anti-racist counter-protestors, who were kept separate by the police.\n\n\nIn Middlesbrough rioters targeted houses and cars in a residential area, smashing windows. Multiple cars were set alight and burning wheelie bins were pushed at a line of police officers, who were also targeted by missiles. Teesside University's Olympia Building had its windows broken, as did some houses and cars. Cleveland Police said that a number of properties on Parliament Road and the Crown Court building were significantly damaged, and a total of 43 people were arrested in connection to the disorder.\n\n\nThere was further rioting outside a second Holiday Inn Express hotel in Tamworth, which had been housing asylum seekers. Objects were thrown at the building and at the police, one of whom was injured, windows were smashed and part of the building was set on fire. Three police dogs were injured, one of whom was hit in the head by a brick.\n\n\nIn Solihull, there was a large anti-immigrant protest in the town centre, which forced the closure of the Touchwood shopping centre. Later, in the evening, West Midlands Police were called to Hermitage Road, where they dispersed two groups of people who were outside The Hub mosque. Police stated they were investigating whether one of these groups may have been connected to an anti-racism protest that was held in Birmingham city centre earlier that day.\n\n\nProtests also occurred in Hull and Weymouth, with a counter-protest at the latter. In Lancaster, two businesses had their windows smashed during a face off between far-right and anti-fascist protestors. A protest in Sheffield led to one arrest for a public order offence, as well as a far-right protester being injured after he was attacked. Three people were arrested and two police officers injured during a protest in Weymouth. Anti-racism protestors gathered in Cardiff following a far-right protest which had been planned, however nothing materialised.\n\n\n5 August\n\nIn Birmingham, a Sky News crew was followed by a man in a balaclava wielding a knife who slashed their van's tyre. Before this, the Sky News broadcast from the scene was interrupted by a small group of these protestors, with one shouting \"free Palestine\" and \"fuck the EDL\". This came after a group gathered around a mosque in anticipation of a far-right protest which was rumoured to be scheduled in the area. Individuals were observed keeping watch around the Village Islamic Centre, while nearby shops closed, a hospital sent staff home, and several doctors' surgeries also closed early preparing for potential violence. Several vehicles close to Stechford police station were attacked amid the protest. A lone man outside at a pub in Yardley was also attacked by a group. Birmingham Live reported that video footage of the incident shows it starting with words being exchanged before one member of the group starts assaulting the man. Others then join in the beating while some try to break up the attack. Sky News' Midlands correspondent Becky Cotterill posted to X the next day that the manager of the pub had told her the man had goaded his attackers by using offensive language as they walked past.\n\n\nIn Plymouth, many businesses closed early, bus routes were diverted and a performance at the Theatre Royal was cancelled as two protests were planned to take place in the city. Plymouth City Council warned residents to stay away from the city centre as Devon and Cornwall Police said they would be increasing their presence there. Police lined Royal Parade as the two groups of protesters – one anti-fascist and the other far-right – faced off, throwing items including glass and stones at each other as one woman on the anti-fascist side was injured by a flying item. As the protests continued into the night, bottles, bricks and fireworks were thrown and arrests were made. Three police officers were carried away from the scene after being injured, with a police van being damaged. Shortly before 10 p.m., Devon and Cornwall Police reported that 150 officers were deployed in the city centre. A TK Maxx's shopfront was smashed and brick paving was torn up in the city centre. In a statement the police revealed that six arrests had been made relating to the disorder and 'several' officers were injured, as well as some members of the public, two of whom were hospitalised.\n\n\nOutside England, there was further violence in the Sandy Row area of Belfast, Northern Ireland. A business was targeted for a second time, and armoured police Land Rovers were attacked with petrol bombs and bricks. Police fired two plastic bullets at rioters in response. A man in his 50s was taken to hospital following a serious assault in which his attackers \"stamped on his head\" as other members of the public tried to shield him. Police were treating the attack as a racially-motivated hate crime. Assistant Chief Constable Melanie Jones of the PSNI said there was loyalist paramilitary involvement in the violence.\n\n\nBricks were thrown at police officers in Darlington after \"two large groups of mostly males\" gathered in the North Lodge Park area, which is near a mosque. There was one arrest.\n\n\nOn 5 August, a list of at least 39 immigration law specialists, asylum support organisations and immigration services across England, originally published on the Telegram messaging app along with the phrase \"no more immigration\" and other anti-migration sentiment and widely circulated on social media, identified their addresses as targets for far-right demonstrations over the coming week.\n\n\n6 August\n\nOne person was arrested and 37 dispersal orders issued in Durham over fears of potential unrest as reports of planned disorder circulated online. However, despite these reports, there were no reported incidents of criminal damage or disorder in the city.\n\n\nSix people were arrested after further disorder in Belfast on 6 August. A 15-year-old boy was assaulted at a Middle Eastern shop in west Belfast. A hijacked car was deliberately driven into an estate agency in the Woodvale Road area. Three masked teenagers were arrested in the Shankill area on \"suspicion of riotous behaviour\".\n\n\n7 August\n\nOn 7 August, over 100 far-right and 30 counter protests were reportedly planned across the country in 41 of England and Wales' 43 police force areas, with their main focus being immigration centres and lawyers' offices. However, very few far-right protestors turned out with counter protests dominating the evening instead.\n\n\nIn Walthamstow and in Bristol, thousands of counter-protesters gathered in peaceful demonstrations, with similar scenes in Birmingham, Harrow, Newcastle, Sheffield and Southampton. Large crowds also gathered in Hastings and in Brighton; one person was arrested at the latter. Three people were arrested at a counter protest in Northampton and one anti-migrant protester was arrested in Portsmouth, with counter protests also taking place in Liverpool, Brentford, North Finchley and Derby. One man was arrested in Blackpool, another in Middlesbrough, and one amid a counter protest in Bournemouth. In contrast to the other protests, Chatham saw around 150 anti-immigration protesters outnumbering around 50 counter-protesters; in Aldershot counter-protesters had to be separated from far-right protesters by police.\nAround 500 anti-racist counter-protesters gathered in Southend to oppose an expected far-right protest that did not materialise.\n\n\nResponses\n\nDomestic\n\nAfter the Southport riot, Prime Minister Keir Starmer wrote that those who had \"hijacked the vigil for the victims\" had \"insulted the community as it grieves\" and that rioters would feel the full force of the law. On 1 August, and following a meeting with senior police officers, Starmer announced the establishment of a national violent disorder programme to facilitate greater cooperation between police forces when dealing with violent disorder. On 4 August, Starmer said that rioters \"will feel the full force of the law\" and told them \"You will regret taking part in this, whether directly or those whipping up this action online and then running away themselves\". He added \"I won't shy away from calling it what it is – far-right thuggery\". Starmer later called an emergency response meeting of Cobra. After the COBRA meeting he announced the establishment of a \"standing army\" of specialist police officers to address the ongoing violence, and help bring it to an end.\n\n\nHome Secretary Yvette Cooper condemned the Southport riot as appalling and requested a criminal investigation. According to The Independent, Cooper was also \"reviewing whether the far-right English Defence League  should be made a proscribed terrorist organisation\", after its connection to the Southport riot, a suggestion echoed by Deputy Prime Minister Angela Rayner, although the EDL has ceased to exist in a formal sense.\n\n\nHome Office minister David Hanson said that police were monitoring organisations, and would use face recognition technology to identify anyone involved in violence.\n\n\nWhen asked by a Sky News journalist about claims of two-tier policing, Mark Rowley, the Metropolitan Police Commissioner, grabbed the reporter's microphone and threw it on the ground, for which he later apologised. Responding two days later, he said those asking the question were imperilling his officers.\n\n\nThe Northern Ireland Assembly was recalled, and is scheduled to meet on 8 August, while Starmer has rejected calls from some senior politicians, including former Home Secretary Priti Patel, to recall the Westminster parliament.\n\n\nFollowing the emergence on 5 August of a list of immigration law specialists, asylum support organisations and immigration services to be targeted by far-right groups, the president of The Law Society wrote to the Prime Minister, Lord Chancellor and Home Secretary to express concerns.\n\n\nOn 7 August, UK police announced their largest mobilisation since the 2011 England riots, due to the thread of further violence targeting asylum seekers and immigrants, with 6,000 riot police on duty throughout the country and 2,000 in reserve as reinforcements.\n\n\nArrests and prosecutions\n\nOn 3 August, the Ministry of Justice began discussions about magistrates' courts in England and Wales remaining open overnight to preliminary rule on suspects arrested, due to the anticipated increase in people held in custody for riot related offences. This also occurred during the 2011 England riots.\n\n\nOn 5 August, the National Police Chiefs' Council said that a total of 378 arrests had so far been made since riots began.\n\n\nThe first court hearings were held on 5 August 2024 on a range of charges including violent disorder, assault on an emergency worker, and burglary, with some defendants pleading guilty.\n\n\nA charge for \"using threatening words or behaviour intending to stir up racial hatred\" was made on 6 August 2024 following Facebook posts.\n\n\nOn 7 August, the first sentences for crimes committed during the riots were handed out to three men who took part in unrest in Southport and Liverpool. The three were sentenced to periods of between 20 months and three years in prison.\n\n\nInternational\n\nAustralia, Hong Kong, India, Indonesia, Malaysia, Nigeria and the United Arab Emirates issued travel advisories and safety warnings to the United Kingdom advising their citizens to exercise caution and avoid areas where protests are taking place.\n\n\nReactions\n\nThe Labour MP for Southport, Patrick Hurley, said on BBC Radio 4's Today on 31 July, that the rioters were not local residents, but were \"thugs who'd got the train in\" and were \"utterly disrespecting the families of the dead and injured children, and  the town\". The rioters had broken windows of Southport Mosque; Hurley told Today that people \"were using the horrific incident on Monday, the deaths of three little kiddies, for their own political purposes\". The Liverpool Region Mosque Network and the Muslim Association of Britain released statements condemning the riot.\n\n\nThe Reform UK leader, Nigel Farage condemned the violence, stating: \"The levels of intimidation and threat to life have no place in a functioning democracy\". He called for Parliament to be recalled over the riots and suggested there was a widespread impression of \"two-tier policing\" as a result of \"soft policing\" during Black Lives Matter protests, which he said contributed to a \"sense of injustice\". Conservative former home secretary Priti Patel called Farage's comments deeply misleading and \"simply not relevant right now\". She told Times Radio: \"There's a clear difference between effectively blocking streets or roads being closed to burning down libraries, hotels, food banks and attacking places of worship. What we have seen is thuggery, violence, racism.\" Patel also wrote to the Prime Minister and Home Secretary, asking them to recall parliament.",
+        "idx": 68
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "question_answering",
+            "summarisation"
+        ],
+        "tasks": [
+            "open-question-answering",
+            "instruction-based-summarisation"
+        ],
+        "input": "Explain in 2 sentences the content of the first five American amendments",
+        "idx": 69
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "summarisation",
+            "audio"
+        ],
+        "tasks": [
+            "abstract-summarisation",
+            "text-to-audio"
+        ],
+        "input": "Form an abstract and narrate it out loud to me. The Industrial Revolution, which is often divided into the First and Second Industrial Revolutions, was a transformative period where the global economy shifted from agrarian-based systems, which had followed the Agricultural Revolution, to more widespread, efficient, and stable manufacturing processes. This shift began in Great Britain and eventually spread to continental Europe and the United States during the period from around 1760 to about 1820–1840. The revolution saw a transition from hand production methods to the use of machines, introduction of new chemical manufacturing and iron production processes, increased use of water and steam power, development of machine tools, and the rise of the mechanized factory system. As a result, output greatly increased, leading to an unprecedented rise in population and population growth rates.\n\nThe textile industry was the pioneer in adopting these modern production methods and soon became the dominant industry in terms of employment, value of output, and capital invested. Many of the technological and architectural innovations of this era originated in Britain. By the mid-18th century, Britain had established itself as the world's leading commercial nation, controlling a global trading empire with colonies in North America and the Caribbean. It also held major military and political influence over the Indian subcontinent, particularly in the proto-industrialised region of Mughal Bengal, through the activities of the East India Company. \n\nThe development of trade and the emergence of business were significant drivers of the Industrial Revolution. Legal developments also played a role, such as courts upholding property rights. An entrepreneurial spirit and a consumer revolution further fueled industrialization in Britain, which after 1800, was emulated in Belgium, the United States, and France.",
+        "idx": 70
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_image",
+            "image_to_text"
+        ],
+        "tasks": [
+            "depth-estimation",
+            "image-captioning"
+        ],
+        "input": "Help me estimate the depth in ./data/images/image_15.jpg and describe the depth image",
+        "idx": 71
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "image_generation",
+            "image_to_image"
+        ],
+        "tasks": [
+            "depth-estimation",
+            "text-to-image"
+        ],
+        "input": "generate an image for 'Kids are playing skateboard in a park' and estimate the depth",
+        "idx": 72
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "machine_translation"
+        ],
+        "tasks": [
+            "image-captioning",
+            "translation-xx-to-yy"
+        ],
+        "input": "Extract content using image to text and change its language to Chinese ./data/images/image_16.jpg\n",
+        "idx": 73
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "audio"
+        ],
+        "tasks": [
+            "image-captioning",
+            "text-to-audio"
+        ],
+        "input": "Shout out the content of the speech balloon in ./data/images/image_22.jpg",
+        "idx": 74
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "machine_translation"
+        ],
+        "tasks": [
+            "object-detection",
+            "translation-xx-to-yy"
+        ],
+        "input": "What's the Hindi translation for the animal in ./data/images/image_17.jpg",
+        "idx": 75
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "summarisation",
+            "text_generation"
+        ],
+        "tasks": [
+            "instruction-based-summarisation",
+            "text-generation"
+        ],
+        "input": "Summarize this text in one single short sentence and then compose 12 alexandrine variations of it which rime.\\n\"Parsival\" is a medieval romance written by the poet Wolfram von Eschenbach in the early 13th century. The story follows the adventures of the young knight Parsival as he seeks to achieve the grail, a sacred and mystical object. Along the way, Parsival encounters various challenges, including battles with other knights, temptations, and tests of his loyalty. He is guided by the wisdom of his mentor Gurnemanz and the mysterious hermit Trevrizent. Parsival's quest is ultimately one of spiritual enlightenment and self-discovery, as he learns the importance of empathy, humility, and forgiveness. The story is also filled with elements of chivalry, courtly love, and the supernatural, making it a complex and richly layered work. Through his journey, Parsival evolves from a naive and impulsive youth into a wise and compassionate hero. The narrative explores themes of destiny, redemption, and the search for meaning in life. Ultimately, Parsival is able to fulfill his quest for the grail and achieve a sense of inner peace and fulfillment. Wolfram's retelling of the Parsival legend is considered one of the most significant works of German literature from the Middle Ages.",
+        "idx": 76
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "machine_translation",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "translation-xx-to-yy"
+        ],
+        "input": "Translate 夏天的牡丹 into English and create a visual representation\n",
+        "idx": 77
+    },
+    {
+        "input_type": "audio",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition",
+            "automatic-speech-recognition"
+        ],
+        "input": "Find the entities mentioned in the transcription of this speech of Churchill ./data/audios/audio_6.wav",
+        "idx": 78
+    },
+    {
+        "input_type": "image",
+        "output_type": "audio",
+        "domains": [
+            "image_to_text",
+            "audio"
+        ],
+        "tasks": [
+            "object-detection",
+            "text-to-audio"
+        ],
+        "input": "Narate an audio of the objects present in ./data/images/image_16.jpg",
+        "idx": 79
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "summarisation",
+            "image_to_text"
+        ],
+        "tasks": [
+            "image-captioning",
+            "extractive-summarisation"
+        ],
+        "input": "Describe ./data/images/image_18.jpg and then summarize",
+        "idx": 80
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "text_generation",
+            "machine_translation"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "text-generation"
+        ],
+        "input": "Describe the typical day of a snowboarder in a multi-lingual version",
+        "idx": 81
+    },
+    {
+        "input_type": "text",
+        "output_type": "image",
+        "domains": [
+            "question_answering",
+            "image_generation"
+        ],
+        "tasks": [
+            "text-to-image",
+            "open-question-answering"
+        ],
+        "input": "Answer who holds the record for 100m freestyle? and draw an image portrait",
+        "idx": 82
+    },
+    {
+        "input_type": "text",
+        "output_type": "audio",
+        "domains": [
+            "summarisation",
+            "audio"
+        ],
+        "tasks": [
+            "abstract-summarisation",
+            "text-to-audio"
+        ],
+        "input": "Narrate aloud in audio the abstract synopsis of the text.\\nPrior to the 1980s, global fish supply from aquaculture did not represent a significant food source. However, depletion of ocean fisheries and subsequent decline of capture fishery production caused aquaculture to grow rapidly. From the mid-1980s to 2000, global aquaculture production increased by more than 50%, and cemented itself as a significant source for global fish supply. Since 2000, aquaculture has been the fastest growing food production sector, growing 5.8% per year, supplying over 100 metric tonnes of fish, shellfish, and seaweeds from 425 species in 2017.\n\nGlobal aquaculture production by country in million tonnes, 1950–2010, as reported by the FAO. Based on data sourced from the FishStat database.\n\nThe Blue Revolution was initially concentrated in Asia, and China in particular. Aquaculture in Asian countries continues to dominate, accounting for 89% of global aquaculture production, with China alone accounting for 58% of global production. However, it is also intensifying in other regions, with growth rates in South America, and more recently Africa, outpacing China.\n\nThe Blue Revolution has driven and supported the global increase in global fish consumption since the 1980s. Over the last several decades, global fish consumption has increased 3.1% per year, and is primarily supplied through aquaculture.",
+        "idx": 83
+    },
+    {
+        "input_type": "image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "text_generation"
+        ],
+        "tasks": [
+            "image-classification",
+            "text-generation"
+        ],
+        "input": "Identify the dish in image ./data/images/image_13.jpg and generate an essay about it",
+        "idx": 84
+    },
+    {
+        "input_type": "audio",
+        "output_type": "image",
+        "domains": [
+            "audio",
+            "summarisation",
+            "image_generation"
+        ],
+        "tasks": [
+            "automatic-speech-recognition",
+            "text-to-image",
+            "abstract-summarisation"
+        ],
+        "input": "Summarise the text present in the audio './data/audios/audio_6.wav' and generate an visual representation for it",
+        "idx": 85
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "machine_translation",
+            "summarisation",
+            "text_classification"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "abstract-summarisation",
+            "text-classification"
+        ],
+        "input": "For the given passage, translate that to finnish, summarise it in Chinese, and classify it into the categories (conversation, essay, speech) given based on the summary. Passage: After reading it, almost two years later, I can say only one positive thing: Adam can write well. He delivers the stories well, but here I question the ethics behind doing so. In all honesty, should we really be laughing at other people’s medical disasters? And should we really be selling them to make a cheap buck?",
+        "idx": 86
+    },
+    {
+        "input_type": "image",
+        "output_type": "audio",
+        "domains": [
+            "image_to_text",
+            "text_classification",
+            "audio"
+        ],
+        "tasks": [
+            "image-captioning",
+            "text-classification",
+            "text-to-audio"
+        ],
+        "input": "Transform the image ./data/images/image_9.jpg into text then identifying text classes from (city, village, town) and narrate it in an audio to me. ",
+        "idx": 87
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "text_generation",
+            "machine_translation",
+            "token_classification"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "text-generation",
+            "named-entity-recognition"
+        ],
+        "input": "Write an essay about 'Tools for outdoor camping', translate it to German and find related token entities",
+        "idx": 88
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "summarisation",
+            "text_classification",
+            "text_generation"
+        ],
+        "tasks": [
+            "text-classification",
+            "text-generation",
+            "abstract-summarisation"
+        ],
+        "input": "summarise the review, classifiy the summary into [\"positive\", \"negative\", \"neutral\", \"irrelevant\"],  and write a response message. Review: It is very hard for me to rate this since I was mesmerized by the first half of the book and fell a bit out of love in the second part.\n\nI was fascinated by the idea of an \"alien\" ocean. Most of the times when people think of aliens, they see beings more or less similar to humans, at least possessing some characteristic that humans can relate to. One of the ideas of Solaris is that we hardly accept that something cannot be understood or explained by the existing human laws.\n\nThe problem with the book, and the reason for my 4 stars, was the insertion of some dry, sience-text chapters about the different theories about the foreign planet and the ocean. Although a bit too sciency, I enjoyed reading some of them in the first part. However, in the second part, there was a lengthy lecture about different formations created by the mysterious ocean on Solaris (mimoids, symmetriads and asymmetriads etc) which was really boring. It gave me the impression I was reading a science compendium. It did not seem to add much to the plot or allowed any progress in solving the mystery.\n\nThe ending was a bit unsatisfactory but maybe it was meant to be this way.",
+        "idx": 89
+    },
+    {
+        "input_type": "text,image",
+        "output_type": "text",
+        "domains": [
+            "image_to_text",
+            "summarisation",
+            "text_classification"
+        ],
+        "tasks": [
+            "text-classification",
+            "abstract-summarisation",
+            "image-captioning"
+        ],
+        "input": "Describe this image in text to me ./data/images/image_21.jpg, summarise and decide which text category it falls in [\"item\", \"people\", \"organisation\", \"country\"]",
+        "idx": 90
+    },
+    {
+        "input_type": "audio",
+        "output_type": "audio",
+        "domains": [
+            "audio",
+            "summarisation"
+        ],
+        "tasks": [
+            "extractive-summarisation",
+            "text-to-audio",
+            "automatic-speech-recognition"
+        ],
+        "input": "Can you please listen to this speech ./data/audios/audio_7.wav, extract the summary, and record the text in audio for me?",
+        "idx": 91
+    },
+    {
+        "input_type": "image",
+        "output_type": "audio",
+        "domains": [
+            "image_to_text",
+            "machine_translation",
+            "audio"
+        ],
+        "tasks": [
+            "image-captioning",
+            "text-to-audio",
+            "translation-xx-to-yy"
+        ],
+        "input": "What's written in text the image ./data/images/image_19.png, read it aloud in Italian",
+        "idx": 92
+    },
+    {
+        "input_type": "audio",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "summarisation",
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition",
+            "abstract-summarisation",
+            "automatic-speech-recognition"
+        ],
+        "input": "Transcribe the audio from ./data/audios/audio_9.wav, summarise it and then find all the entities mentioned in it",
+        "idx": 93
+    },
+    {
+        "input_type": "image",
+        "output_type": "audio",
+        "domains": [
+            "image_to_text",
+            "machine_translation",
+            "audio"
+        ],
+        "tasks": [
+            "image-captioning",
+            "translation-xx-to-yy",
+            "text-to-audio"
+        ],
+        "input": "Describe what is the image about ./data/images/image_20.jpg, translate the summary to French and read it out in French",
+        "idx": 94
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "machine_translation",
+            "question_answering",
+            "text_classification"
+        ],
+        "tasks": [
+            "question-answering-using-context",
+            "translation-xx-to-yy",
+            "text-classification"
+        ],
+        "input": "Translate the given passage, answer 'what could be the relation between Adam and the speaker?' in one Chinese word using the translation as context, and tell me the category that the answer falls into among [\"colleague\", \"family\", \"couple\", \"stranger\", \"customer\"]. \nAdam’s manager then told me that Adam had promised eight seats to some of his friends last minute. And whilst Adam skulked in the background, letting his manger do all the talking, she told me that if I didn’t find these eight seats for his friends they would pull the plug on us and not perform. And obviously this would have been disastrous for the theatre and its patrons. Me and my team had to magic up these eight seats in an already full auditorium. Not an easy task. And we could not turn any of our customers away who had already paid for their tickets.",
+        "idx": 95
+    },
+    {
+        "input_type": "audio",
+        "output_type": "text",
+        "domains": [
+            "audio",
+            "summarisation",
+            "machine_translation"
+        ],
+        "tasks": [
+            "abstract-summarisation",
+            "automatic-speech-recognition",
+            "translation-xx-to-yy"
+        ],
+        "input": "Extract text from this audio interview ./data/audios/audio_2.wav. Give me a summary after translating to chinese",
+        "idx": 96
+    },
+    {
+        "input_type": "audio",
+        "output_type": "image",
+        "domains": [
+            "audio",
+            "image_generation",
+            "summarisation"
+        ],
+        "tasks": [
+            "automatic-speech-recognition",
+            "text-to-image",
+            "abstract-summarisation"
+        ],
+        "input": "extract a summarise from the audio transcript ./data/audios/audio_8.wav, and generate an image based on the summary",
+        "idx": 97
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "machine_translation",
+            "summarisation",
+            "text_classification"
+        ],
+        "tasks": [
+            "translation-xx-to-yy",
+            "abstract-summarisation",
+            "text-classification"
+        ],
+        "input": "Translate 'Paris est la capitale de la France et une collectivité à statut particulier. Divisée en vingt arrondissements, elle est le chef-lieu de la région Île-de-France et le siège de la métropole du Grand Paris.\n\nParis est situé au centre du Bassin parisien, sur une boucle de la Seine, entre les confluents avec la Marne et l'Oise. Le site est occupé à partir du iiie siècle avant notre ère sous le nom Lutèce par le peuple gaulois des Parisii, qui donne son nom à la ville. Au début du vie siècle, Clovis choisit Paris comme capitale de son royaume. La cité devient alors une des principales villes de l'ancienne Gaule avec des palais royaux, de riches abbayes et une cathédrale. Au cours du Moyen Âge, elle s'impose comme un foyer intellectuel et artistique majeur avec la création de l'université de Paris. Son importance économique et politique ne cesse de croître, ce qui en fait l'une des villes les plus importantes de l'Occident médiéval. La montée en puissance de la monarchie française à partir du xvie siècle - d'abord en Europe puis dans le monde - en fait une métropole au rayonnement planétaire, capitale d'un empire colonial jusqu'au xxe siècle.\n\nLe paysage urbain parisien est facilement reconnaissable, caractérisé par de grands boulevards, des places dégagées et des immeubles d'un style spécifique appelé. Il est le résultat de grands travaux d'urbanisme réalisés entre 1853 et 1870 sous le Second Empire, sous la houlette du baron Haussmann, qui ont profondément modifié la Capitale en lui donnant le visage qu'on lui connaît de nos jours, tout en laissant subsister des pans du tissu urbain antérieur. Au cours du xxe siècle, la physionomie de Paris a continué à se transformer avec la mise en service du métro parisien ainsi que la construction dans les arrondissements périphériques d'habitations à bon marché puis de tours et de barres d'immeubles. Le centre de la capitale a également été profondément rénové dans les années 1970 (avec le déménagement des Halles vers Rungis et la construction du Centre Pompidou) tandis que l'introduction de la voiture s'est concrétisée par l'aménagement du boulevard périphérique.\n\nParis intra-muros a une superficie de 105 km2 et compte 2 133 111 habitants au 1er janvier 2021b 1. Son agglomération s'étend sur 2 846 km2 et compte 10 890 751 habitants au 1er janvier 2021, ce qui en fait l'agglomération la plus peuplée de France et d'Europe de l'Ouest. Outre de nombreux sièges de multinationales, la ville accueille plusieurs institutions européennes et internationales. C'est également l'une des principales places financières mondiales. Elle est par ailleurs la capitale mondiale du luxe, de la haute couture et de la haute gastronomie. La densité de l'habitat, de la population, des activités et des réseaux conduisent néanmoins à certains problèmes de déplacements, de pollution atmosphérique, d'approvisionnement de la capitale ou de coût de l'immobilier.\n\nDestination touristique visitée chaque année par quelque dix millions de touristes étrangers, Paris possède un patrimoine architectural mondialement célèbre comme la cathédrale Notre-Dame de Paris, la tour Eiffel, le musée du Louvre ou encore l'Arc de Triomphe. De nombreux styles architecturaux sont représentés, du classicisme à l'architecture contemporaine en passant par l'Art nouveau. La capitale accueille également de nombreux grands évènements culturels et sportifs tels Nuit blanche, le tournoi de Roland Garros ou encore l'arrivée du Tour de France. Elle héberge des clubs sportifs renommés comme le club de football du Paris Saint-Germain et celui de rugby à XV du Stade français. Paris a organisé les Jeux olympiques en 1900, puis en 1924, et les accueille à nouveau en 2024.' to English and summarise it. Also find the the set of classes present from [history, overview, geography, politics] in the summary",
+        "idx": 98
+    },
+    {
+        "input_type": "text",
+        "output_type": "text",
+        "domains": [
+            "question_answering",
+            "text_generation",
+            "token_classification"
+        ],
+        "tasks": [
+            "named-entity-recognition",
+            "question-answering-using-context",
+            "text-generation"
+        ],
+        "input": "Based on the context, first answer the question 'Where were the Asian games hosted in 2022?' and write some text about it, finally recognise the entities tokens in the article. Context: The 2022 Asian Games, officially the 19th Asian Games and also known as Hangzhou 2022, were a continental multi-sport event which was held from 23 September to 8 October 2023 in Hangzhou, China. The games marked the 110th anniversary since the creation of the first continental event, starting with the 1913 Far Eastern Championship Games.",
+        "idx": 99
+    }
+]
