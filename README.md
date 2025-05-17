@@ -26,6 +26,8 @@ This archive contains:
    - `capability_kg.html` the GUI to be opened
 - `PDDL-domain-files/` corresponding to the 10 domains involved in the
     MuSE Benchmark
+- `NLP_Taxonomy/` which contains our comprehensive taxonomy of model
+  actions as json and png
 - `Screencast.mp4` which presents a complete run-through of a query
     for all the systems we tested in the submission, _i.e._,
     HuggingGPT, ControlLLM and **Hive**

@@ -1,0 +1,475 @@
+{
+    "multimodality": {
+        "visual data": {
+            "data visualization": {}
+        },
+        "structured data": {
+            "structured data search": {}
+        },
+        "speech and audio": {
+            "audio speech co reasoning": {}
+        },
+        "programming languages": {
+            "programming language identification": {},
+            "language identification": {}
+        },
+        "multimodal interaction": {},
+        "multimodal applications": {},
+        "multi modality": {},
+        "multimodal entailment": {},
+        "multimodal understanding": {}
+    },
+    "interface": {
+        "dialog system and conversational agent": {
+            "dialogue systems": {},
+            "dialogue modeling": {},
+            "multimodal dialogue": {},
+            "conversational agent": {},
+            "multi turn dialogue": {},
+            "dialogue style interactions": {},
+            "dialogue and interaction scenarios": {},
+            "multi turn conversations": {},
+            "multi round dialogue": {},
+            "single turn visual dialogue": {},
+            "task oriented dialogue system": {}
+        },
+        "question answering": {
+            "question": {},
+            "ask": {},
+            "questioning": {}
+        }
+    },
+    "semantic": {
+        "discourse and pragmatics": {},
+        "knowledge representation": {
+            "knowledge use": {},
+            "knowledge extraction": {},
+            "knowledge discovery": {},
+            "knowledge assistance": {},
+            "knowledge question and answer": {},
+            "knowledge query": {},
+            "knowledge comprehension": {},
+            "knowledge reasoning": {}
+        },
+        "text complexity": {
+            "text complexity prediction": {},
+            "lexical complexity prediction": {}
+        },
+        "semantic search": {},
+        "representation learning": {},
+        "word sense disambiguation": {},
+        "semantic parsing": {
+            "frame semantic parsing": {}
+        },
+        "language models": {
+            "language model finetune": {},
+            "masked language modeling": {},
+            "large language model": {},
+            "autoregressive language model": {},
+            "graph oriented large language model": {},
+            "language representation": {},
+            "language model pretraining": {},
+            "developing techniques to improve language models": {},
+            "language adaptive fine tuning": {},
+            "multilingual language modeling": {},
+            "language model training": {},
+            "language masking": {},
+            "language representation learning": {},
+            "whole word masking": {},
+            "uncased language modeling": {}
+        },
+        "semantic similarity": {
+            "phrase similarity": {},
+            "sentence to sentence similarity": {},
+            "answer similarity": {},
+            "text similarity": {},
+            "sentence level text similarity": {},
+            "cross lingual semantic similarity": {}
+        },
+        "lexical semantics": {},
+        "semantic embeddings": {},
+        "language based semantic alignment": {}
+    },
+    "sentiment": {
+        "opinion mining": {},
+        "stylistic analysis": {},
+        "intent recognition": {
+            "intent analysis": {}
+        },
+        "emotion analysis": {
+            "emotion prediction": {},
+            "emotion recognition": {},
+            "facial emotion recognition": {},
+            "speech emotion recognition": {},
+            "emotion categorization": {},
+            "emotion transfer": {},
+            "face recognition": {}
+        },
+        "aspect-based sentiment analysis": {
+            "aspect term sentiment classification": {},
+            "sentiment analysis": {},
+            "sentiment inference": {},
+            "sentiment classification": {},
+            "sentiment text classification": {},
+            "inference": {},
+            "btc sentiment classification": {},
+            "text sentiment analysis": {},
+            "sentiment regression": {},
+            "logical inference": {},
+            "target dependent sentiment classification": {},
+            "language specific sentiment classification": {}
+        },
+        "polarity analysis": {
+            "polarity detection": {},
+            "single polarity": {},
+            "pairs aspect polarity": {}
+        }
+    },
+    "syntactic text processing": {
+        "tagging": {
+            "pos tagging": {},
+            "sequence tagger": {},
+            "text tagging": {},
+            "token tagging": {},
+            "sequence tagger model": {},
+            "morphological tagging": {},
+            "image tagging": {},
+            "tag recognition": {}
+        },
+        "morphology": {},
+        "chunking": {},
+        "phonology": {},
+        "text error correction": {
+            "text correction": {},
+            "text error detection": {},
+            "grammar correction": {},
+            "text detection": {},
+            "grammar": {}
+        },
+        "text segmentation": {
+            "word segmentation": {},
+            "sentence segmentation": {},
+            "semantic segmentation": {},
+            "segmentation": {},
+            "multilabel language segmentation": {}
+        },
+        "typology": {},
+        "syntactic parsing": {
+            "syntactic analysis": {}
+        },
+        "phonetics": {},
+        "text normalization": {
+            "lexical normalization": {}
+        },
+        "text processing": {}
+    },
+    "linguistics and cognitive processing": {
+        "linguistic theory": {},
+        "cognitive modeling": {},
+        "psycholinguistics": {},
+        "perception language tasks": {},
+        "natural language processing": {},
+        "natural language inference": {},
+        "natural language understanding": {},
+        "natural language inference nli function calls": {},
+        "natural language instructions": {},
+        "language based instructions": {},
+        "natural instructions": {},
+        "code related english instructions": {}
+    },
+    "responsible and trustworthy processing": {
+        "ethics": {},
+        "low-resource": {
+            "low resource tasks": {}
+        },
+        "robustness": {},
+        "green and sustainable": {},
+        "explanainability": {},
+        "interpretability": {}
+    },
+    "reasoning": {
+        "textual inference": {},
+        "commonsense reasoning": {
+            "common sense question answering": {},
+            "commonsense causal reasoning": {},
+            "visual commonsense reasoning": {},
+            "common sense questioning": {},
+            "generative commonsense reasoning": {}
+        },
+        "numerical reasoning": {
+            "math reasoning": {},
+            "math calculation": {},
+            "math problem solving": {},
+            "simple math": {},
+            "mathematical": {}
+        },
+        "knowledge graph reasoning": {},
+        "machine reading comprehension": {},
+        "fact and claim verification": {
+            "fact checking": {},
+            "factuality metric": {},
+            "table fact checking": {}
+        },
+        "argument mining": {},
+        "logic": {},
+        "deductive reasoning": {},
+        "simple reasoning": {},
+        "explanation critiquing": {},
+        "logical understanding": {},
+        "complex reasoning": {},
+        "reasoning steps": {},
+        "reasoning task": {},
+        "logical thought": {},
+        "complicated logical questions": {}
+    },
+    "multilinguality": {
+        "cross-lingual transfer": {},
+        "machine translation": {},
+        "code-switching": {},
+        "typology": {},
+        "multilingual reasoning": {},
+        "multilingual support": {},
+        "multilingual nlp": {},
+        "multi lingual speech generation": {},
+        "cross lingual understanding": {},
+        "multilingual speech recognition translation": {},
+        "multilingual q a": {},
+        "speech generation": {},
+        "speech translation": {},
+        "cross lingual speech representations": {},
+        "translations": {},
+        "crosslingual generalization": {},
+        "multi language generation": {},
+        "speech conversion": {},
+        "language to language translation": {},
+        "bilingual": {},
+        "voice conversion": {},
+        "cross lingual nlp": {},
+        "multilingual translation": {},
+        "speech enhancement": {},
+        "singing voice conversion": {},
+        "text translation": {},
+        "any to any language speech translation": {},
+        "dialect generation": {},
+        "speech": {},
+        "reasoning over the translated text": {},
+        "multilingual code generation": {},
+        "simultaneous translation on speech input": {},
+        "cross lingual natural language generation": {},
+        "multilingual language matching": {}
+    },
+    "information retrieval": {
+        "indexing": {},
+        "document retrieval": {},
+        "semantic search": {
+            "asymmetric semantic search": {}
+        },
+        "text classification": {
+            "scientific text classification": {},
+            "scientific text": {},
+            "text pair classification": {}
+        },
+        "passage retrieval": {
+            "dense passage retrieval": {},
+            "dense retrieval": {}
+        },
+        "information extraction": {},
+        "data extraction": {},
+        "data retrieval": {}
+    },
+    "information extraction and text mining": {
+        "coreference resolution": {},
+        "text clustering": {
+            "sentence clustering": {},
+            "clustering": {}
+        },
+        "named entity recognition": {
+            "language specific named entity recognition": {},
+            "entity recognition": {},
+            "named entity disambiguation": {},
+            "historic named entity recognition ner": {},
+            "clinical named entity recognition": {},
+            "biomedical entity recognition": {},
+            "disease named entity recognition": {}
+        },
+        "event extraction": {},
+        "open information extraction": {},
+        "term extraction": {},
+        "text classification": {
+            "multilabel text classification": {},
+            "multi label classification": {},
+            "multi label topic classification": {},
+            "multilabel news classification": {},
+            "sentence level text classification": {},
+            "multi label classification for legal text": {},
+            "news article classification": {},
+            "document classification": {},
+            "news genre classification": {},
+            "news articles": {},
+            "language specific news topic classification": {},
+            "paper classification": {},
+            "labeling": {},
+            "topic labeling": {},
+            "document section text classification": {}
+        },
+        "topic modeling": {
+            "topic analysis": {},
+            "topic identification": {}
+        },
+        "summarization": {
+            "meeting summarization": {},
+            "multilingual summarization": {},
+            "multi document summarization": {},
+            "extractive summarization": {},
+            "generative summarization": {},
+            "code summarization": {},
+            "summary extraction": {},
+            "report summarization": {},
+            "update summarization": {},
+            "source code summarization": {},
+            "report analysis": {},
+            "question based summarization": {}
+        },
+        "relation extraction": {
+            "entity relation extraction": {},
+            "entity extraction": {},
+            "entity retrieval": {},
+            "named entity extraction": {},
+            "name extraction": {},
+            "text relation extraction": {}
+        },
+        "text mining": {},
+        "text information retrieval": {}
+    },
+    "text generation": {
+        "data-to-text generation": {},
+        "summarization": {
+            "content summarization": {},
+            "abstractive summarisation": {},
+            "abstract only summarization": {},
+            "text summarization": {},
+            "legal text summarization": {},
+            "article summarization": {}
+        },
+        "question generation": {
+            "query generation": {},
+            "sql query generation": {},
+            "hybrid question generation": {},
+            "answer generation": {},
+            "text to sql generation": {},
+            "generation": {},
+            "text to sql": {},
+            "answer aware question generation": {}
+        },
+        "dialogue response generation": {
+            "dialogue generation": {},
+            "dialogue topic": {},
+            "dialogue relevance and specificity": {},
+            "conversation": {},
+            "conversational reasoning": {},
+            "conversational models": {},
+            "grounded conversation generation": {},
+            "dialogue related knowledge": {},
+            "conversation inference": {},
+            "generating conversational responses": {},
+            "dialogue understanding": {},
+            "conversational capabilities": {},
+            "dialogue continuation": {},
+            "conversation mode": {},
+            "dialogue": {},
+            "dialogue summary": {},
+            "dialogue history": {},
+            "chat like conversations": {},
+            "conversational interface": {},
+            "dialogue writing": {},
+            "conversational language": {},
+            "one on one chat interactions": {},
+            "conversational system": {},
+            "conversational ai": {},
+            "dialogue level commonsense inference": {},
+            "talking": {},
+            "chat based interactions": {},
+            "dialogue use cases": {},
+            "chat assistance": {},
+            "chat assistant": {},
+            "conversational tasks": {},
+            "chat scenarios": {}
+        },
+        "captioning": {
+            "image level captioning": {},
+            "tag to caption": {},
+            "grounded image captioning": {},
+            "natural image captioning": {},
+            "video captioning": {},
+            "movie picture captioning": {}
+        },
+        "paraphrasing": {
+            "paraphrase generation": {},
+            "paraphrase identification": {},
+            "paraphrase mining": {},
+            "query paraphrasing": {},
+            "paraphrasing sentence similarity": {},
+            "figurative language paraphrasing": {},
+            "paraphrase evaluation": {},
+            "paraphrasing and transliteration": {}
+        },
+        "machine translation": {
+            "arabic machine translation": {},
+            "text unsupervised machine translation": {},
+            "text zero shot unsupervised machine translation": {}
+        },
+        "speech recognition": {
+            "overlapped speech detection": {},
+            "spoken language recognition": {},
+            "speaker identification": {},
+            "spoken language understanding": {},
+            "speaker verification": {},
+            "speech language identification lid": {},
+            "automatic speech recognition asr": {},
+            "language understanding": {},
+            "streaming automatic speech recognition": {},
+            "language": {},
+            "speech classification": {},
+            "general language understanding": {},
+            "part of speech token classification": {},
+            "speaker classification": {}
+        },
+        "text style transfer": {
+            "style transfer": {},
+            "artistic style transfer": {},
+            "art style": {},
+            "scene art": {},
+            "few shot text style transfer": {},
+            "portrait style transfer": {},
+            "illustration styles": {},
+            "artistic": {},
+            "scene": {},
+            "art style generation": {},
+            "text to text transfer": {}
+        },
+        "code generation": {
+            "text to code generation": {},
+            "coding": {},
+            "code development": {},
+            "text to code": {},
+            "codegen": {},
+            "code documentation": {},
+            "code instruction": {},
+            "code description": {},
+            "code understanding": {},
+            "coding tasks": {},
+            "code to document generation": {},
+            "code explanation": {},
+            "code inference": {},
+            "programming": {},
+            "code synthesis": {},
+            "code synthesis and understanding": {},
+            "coding ability": {},
+            "code insertion": {},
+            "code review": {}
+        },
+        "text 2 text generation": {},
+        "drs to text generation": {},
+        "instructive text generation": {}
+    }
+}
